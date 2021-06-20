@@ -112,7 +112,7 @@ a {
   letter-spacing: 0.1rem;
   text-align: center;
   text-decoration: none;
-  padding-bottom: 2.2rem;
+  padding: 0rem .5rem 2.2rem .5rem;
 }
 
 /* Mobile Design */
