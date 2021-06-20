@@ -1,0 +1,136 @@
+/* Global Styling */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: rgb(242 242 242);
+}
+
+/* Main & Card Stylings */
+
+.container {
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__container {
+  display: flex;
+  width: 65%;
+}
+
+.card__wrapper {
+  height: 100%;
+  padding: 0rem 6rem 4rem 4rem;
+}
+
+.card--orange {
+  background-color: rgb(227 136 38);
+  border-radius: 1rem 0 0 1rem;
+}
+
+.card--cyan {
+  background-color: rgb(0 105 112);
+}
+
+.card--dark-cyan {
+  background-color: rgb(0 66 65);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.card__img {
+  padding: 4rem 0rem;
+}
+
+.card__title {
+  color: rgb(242 242 242);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 5rem;
+  font-weight: 700;
+  padding-bottom: 5rem;
+}
+
+.card__desc {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  padding-bottom: 7rem;
+}
+
+/* Button Stylings */
+
+.btn {
+  background-color: rgb(242 242 242);
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn--orange {
+  color: rgb(227 136 38);
+}
+
+.btn--cyan {
+  color: rgb(0 105 112);
+}
+
+.btn--dark-cyan {
+  color: rgb(0 66 65);
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+/* Footer Stylings */
+
+.attribution,
+a {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 2.2rem;
+}
+
+/* Mobile Design */
+
+@media screen and (min-width: 300px) and (max-width: 1320px) {
+  .container {
+    padding: 7rem 0rem;
+    height: auto;
+  }
+  .card__container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+  .card--orange {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .card--dark-cyan {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
